@@ -1,0 +1,91 @@
+.toggle_top
+{
+	width : auto;
+	height : auto;
+}
+.toggle_inner_left
+{
+	margin:0px;
+	background : rgb(230, 230, 230);
+	border : 1px solid rgb(211, 211, 211);
+	border-radius : 0px;
+	font-size : 100%;
+	overflow:hidden;
+	-webkit-transition-duration : 0.3s;
+	-webkit-transform : scale(1);
+	-webkit-transition-timing-function : ease-out;
+	-webkit-transition-property : border-radius, width, height, -webkit-transform;
+}
+.toggle_inner_left img, .toggle_inner_right img
+{
+	width : 30%;
+	height : 50px;
+	cursor : pointer;
+	display : inline-block;
+	-webkit-transition-duration : 0.3s;
+	-webkit-transform : scale(1);
+	-webkit-transition-delay:0.2s;
+	-webkit-transition-timing-function : ease-out;
+	-webkit-transition-property : width, height, -webkit-transform;
+}
+.toggle_inner_right
+{
+	margin:0px;
+	position:absolute;
+	right : 0px;
+	background : rgb(230, 230, 230);
+	margin-left:0%;
+	border : 1px solid rgb(211, 211, 211);
+	border-radius : 0px;
+	font-size : 100%;
+	overflow:hidden;
+	-webkit-transition-duration : 0.3s;
+	-webkit-transform : scale(1);
+	-webkit-transition-timing-function : ease-out;
+	-webkit-transition-property : border-radius, width, height, -webkit-transform, margin-left;
+}
+
+.toggle_inner_exit
+{
+	border-radius : 100%;
+	width:0px !important;
+	height : 0px !important;
+	-webkit-transform : scale(0);
+	-webkit-transition-duration : 0.2s;
+	-webkit-transition-timing-function : ease-out;
+	-webkit-transition-property : border-radius, width, height, -webkit-transform;
+}
+.toggle_inner_exit_right
+{
+	border-radius : 100%;
+	width:0px !important;
+	height : 0px !important;
+	margin-left : 100%;
+	-webkit-transform : scale(0);
+	-webkit-transition-duration : 0.2s;
+	-webkit-transition-timing-function : ease-out;
+	-webkit-transition-property : border-radius, width, height, -webkit-transform, margin-left;
+}
+
+.toggle_inner_exit_right  img, .toggle_inner_exit img
+{
+	-webkit-transform : scale(0.5);
+	-webkit-transition-duration : 0.0s;
+	-webkit-transition-timing-function : ease-out;
+	-webkit-transition-property :-webkit-transform;
+}
+
+.toggle_btn
+{
+	overflow : hidden;
+	border-radius : 100%;
+	border : 1px solid rgb(231, 230, 230);
+}
+.toggle_btn>img
+{
+	border : none;
+	width : inherit;
+	height : inherit;
+	cursor : pointer;
+}
+
